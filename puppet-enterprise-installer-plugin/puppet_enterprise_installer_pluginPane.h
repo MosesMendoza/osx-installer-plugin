@@ -10,4 +10,11 @@
 
 @interface puppet_enterprise_installer_pluginPane : InstallerPane
 
+{
+    IBOutlet NSTextField *puppetMasterHostname;
+    IBOutlet NSTextField *puppetAgentCertname;
+}
+
+- (IBAction) registerCheck:(id)aSnd;
+
 @end

@@ -15,4 +15,22 @@
 	return [[NSBundle bundleForClass:[self class]] localizedStringForKey:@"PaneTitle" value:nil table:nil];
 }
 
+
+- (void)didEnterPane:(InstallerSectionDirection)dir
+{
+    // Initialize the text fields to empty
+    [puppetMasterHostname setStringValue:@"puppet.localdomain"];
+    [puppetAgentCertname setStringValue:[[NSHost currentHost] name]];
+    
+    // Enable the continue and go back buttons
+    [self setNextEnabled:YES];
+    [self setNextEnabled:YES];
+    
+}
+
+- (IBAction)registerCheck:(id)aSnd
+{
+    // This will be renamed and used for actually writing our puppet.conf file
+}
+
 @end

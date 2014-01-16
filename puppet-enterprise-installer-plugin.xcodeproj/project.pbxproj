@@ -14,6 +14,7 @@
 		A62D0D921886560200A878D5 /* puppet_enterprise_installer_plugin.xib in Resources */ = {isa = PBXBuildFile; fileRef = A62D0D901886560200A878D5 /* puppet_enterprise_installer_plugin.xib */; };
 		A62D0D951886560200A878D5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A62D0D931886560200A878D5 /* Localizable.strings */; };
 		A62D0D971886560200A878D5 /* InstallerSections.plist in Resources */ = {isa = PBXBuildFile; fileRef = A62D0D961886560200A878D5 /* InstallerSections.plist */; };
+		A62D0DF718884C9900A878D5 /* PuppetConfigurer.m in Sources */ = {isa = PBXBuildFile; fileRef = A62D0DF618884C9900A878D5 /* PuppetConfigurer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,8 @@
 		A62D0D911886560200A878D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/puppet_enterprise_installer_plugin.xib; sourceTree = "<group>"; };
 		A62D0D941886560200A878D5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A62D0D961886560200A878D5 /* InstallerSections.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = InstallerSections.plist; sourceTree = "<group>"; };
+		A62D0DF518884C9900A878D5 /* PuppetConfigurer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PuppetConfigurer.h; sourceTree = "<group>"; };
+		A62D0DF618884C9900A878D5 /* PuppetConfigurer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PuppetConfigurer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +91,8 @@
 			children = (
 				A62D0D8D1886560200A878D5 /* puppet_enterprise_installer_pluginPane.h */,
 				A62D0D8E1886560200A878D5 /* puppet_enterprise_installer_pluginPane.m */,
+				A62D0DF518884C9900A878D5 /* PuppetConfigurer.h */,
+				A62D0DF618884C9900A878D5 /* PuppetConfigurer.m */,
 				A62D0D901886560200A878D5 /* puppet_enterprise_installer_plugin.xib */,
 				A62D0D931886560200A878D5 /* Localizable.strings */,
 				A62D0D961886560200A878D5 /* InstallerSections.plist */,
@@ -173,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A62D0D8F1886560200A878D5 /* puppet_enterprise_installer_pluginPane.m in Sources */,
+				A62D0DF718884C9900A878D5 /* PuppetConfigurer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

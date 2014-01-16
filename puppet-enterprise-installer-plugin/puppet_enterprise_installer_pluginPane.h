@@ -7,6 +7,7 @@
 //
 
 #import <InstallerPlugins/InstallerPlugins.h>
+#import "PuppetConfigurer.h"
 
 @interface puppet_enterprise_installer_pluginPane : InstallerPane
 
@@ -14,7 +15,5 @@
     IBOutlet NSTextField *puppetMasterHostname;
     IBOutlet NSTextField *puppetAgentCertname;
 }
-
-- (void) displayConfigurationWarning:(NSString *)message :(NSString *)information;
 
 @end

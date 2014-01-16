@@ -15,6 +15,6 @@
     IBOutlet NSTextField *puppetAgentCertname;
 }
 
-- (IBAction) registerCheck:(id)aSnd;
+- (void) displayConfigurationWarning:(NSString *)message :(NSString *)information;
 
 @end

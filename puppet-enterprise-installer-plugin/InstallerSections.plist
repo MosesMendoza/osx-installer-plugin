@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
 	<key>SectionOrder</key>
@@ -7,10 +7,10 @@
 		<string>Introduction</string>
 		<string>ReadMe</string>
 		<string>License</string>
-		<string>puppet-enterprise-installer-plugin.bundle</string>
 		<string>Target</string>
 		<string>PackageSelection</string>
-		<string>Install</string>		
+		<string>Install</string>
+		<string>puppet-enterprise-installer-plugin.bundle</string>
 	</array>
 </dict>
 </plist>

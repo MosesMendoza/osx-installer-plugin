@@ -34,13 +34,20 @@
     
     NSString *masterHostname = [puppetMasterHostname stringValue];
     NSString *agentCertname = [puppetAgentCertname stringValue];
-   
+    NSString *targetPath = [[[self section]installerState]targetPath];
+ 
+    NSLog(@"The targetVolumePath for the package is %@", [[[self section]installerState]targetVolumePath]);
+    
+    NSLog(@"The targetPath for the package is %@", [[[self section]installerState]targetPath]);
+    
+    
     PuppetConfigurer *configurer = [[PuppetConfigurer alloc]init];
     
     configurer.masterHostname = masterHostname;
     configurer.agentCertname = agentCertname;
     
-    [configurer writeConfigFile];
+    [configurer writeConfigFile:[configurer createInstallerDirectory:targetPath]];
+    
     
     return YES;
 }

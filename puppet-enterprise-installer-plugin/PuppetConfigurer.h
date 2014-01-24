@@ -16,7 +16,26 @@
 @property NSString* agentCertname;
 @property NSString* masterHostname;
 
-- (void)displayConfigurationWarning:(NSString *)message :(NSString *)information;
-- (void) writeConfigFile;
+
+/* Display a warning window with the title message and the content information, with a single button, 'OK'. */
+- (void) displayConfigurationWarning:(NSString *)message :(NSString *)information;
+
+/* Create a directory in which to house the configuration file that will supply puppet's defaults.
+ The directory will be in targetVolume if targetVolume is not NULL, otherwise it will default to '/'. */
+- (NSString *) createInstallerDirectory: (NSString*)targetVolume;
+
+/* Create a configuration file in installerDir containing containing two lines, each of which will establish
+ variables that puppet will use to set configuration values. */
+- (void) writeConfigFile: (NSString *)installerDir;
+
+/* Return the Home directory of the user running the installer */
+- (NSString *) userHomeDirectory;
+
+/* Attempt to remove an existing pending installer directory */
+- (BOOL) removeExistingInstallerDirectory: (NSString *)path;
+
+/* Attempt to create a pending installer directory */
+- (BOOL) attemptInstallerDirectoryCreation: (NSString *)path :(BOOL)removeExisting;
+
 
 @end
